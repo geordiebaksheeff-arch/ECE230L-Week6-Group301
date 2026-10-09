@@ -11,8 +11,8 @@ module top(
 
     light light_inst(
 
-        .upstairs(sw[1]),
         .downstairs(sw[0]),
+        .upstairs(sw[1]),
         .stair_light(led[0])
 
     );
@@ -30,16 +30,18 @@ module top(
     full_adder LSB_inst(
 
         .A(sw[4]),
-        .B(sw[5]),
-        .Cin(),
+        .B(sw[6]),
+        .Cin(1'b0),
         .Y(led[3]),
         .Cout(LSB_Cout)
 
     );
+    
+
 
     full_adder MSB_inst(
 
-        .A(sw[6]),
+        .A(sw[5]),
         .B(sw[7]),
         .Cin(LSB_Cout),
         .Y(led[4]),
