@@ -1,7 +1,7 @@
 module top(
 
-    input [0:7] sw,
-    output [0:5] led
+    input [7:0] sw,
+    output [5:0] led
 
 
 );
