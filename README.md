@@ -19,7 +19,7 @@ Each full adder is able to handle an additional bit. So for three bits one would
 
 ### 2 - What is the importance of the XOR gate in an adder?
 
-2. It is a way to do binary addition. It acts as the sum bit, ensuring that the proper value for the bit is in the proper position within the adder.
+It is a way to do binary addition. It acts as the sum bit, ensuring that the proper value for the bit is in the proper position within the adder.
 
 ### 3 - What is the largest number a two bit adder can handle? What happens when you go over?
 
